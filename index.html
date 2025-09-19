@@ -3,30 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi Primer proyecto</title>
+  <title>Mi Primer proyecto</title> <!-- Nombre en la pestaña -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a href="#" class="logo">Juan Pablo</a>
+      <a href="#" class="logo">Juan Pablo</a> <!-- Encabezado esquina izq -->
       <ul class="menu">
-        <li><a href="#about">Estudio Ingeniería</a></li>
-        <li><a href="#projects">Proyectos: vacio</a></li>
-        <li><a href="#contact">3042471675</a></li>
+        <li><a href="#about">Estudio Ingeniería</a></li> <!-- Encabezado esquina der -->
+        <li><a href="#projects">Proyectos: vacio</a></li> <!-- Encabezado esquina der -->
+        <li><a href="#contact">3042471675</a></li> <!-- Encabezado esquina der -->
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="hero" class="hero">
-      <h1>Hola, soy <strong>Juan Pablo</strong></h1>
-      <p>Soy estudiante de Ingeniería de Sistemas y futuro Full Stack Developer 🚀</p>
-      <a class="cta" href="#projects">Ver mis proyectos: vacio</a>
+      <h1>Hola, soy <strong>Juan Pablo</strong></h1> <!-- Texto central -->
+      <p>Soy estudiante de Ingeniería de Sistemas y futuro Full Stack Developer 🚀</p> <!-- Texto abajo de nombre -->
+      <a class="cta" href="#projects">Ver mis proyectos: vacio</a> <!-- Boton azul -->
     </section>
 
     <section id="about">
-      <h2>Sobre mí</h2>
+      <h2>Sobre mí</h2> <!-- Parte inferior esquina izq -->
       <p>Me gusta ver series y jugar videojuegos</p>
     </section>
 
@@ -41,8 +41,42 @@
     </section>
   </main>
 
+  <!-- Flexbox de la pagina -->
+    <section id="projects" class="projects">
+    <h2>Mis Proyectos</h2>
+    <div class="projects-container">
+      
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Este es un ejemplo de proyecto con descripción breve.</p>
+        <a href="#" class="btn-project">Ver más</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Otro proyecto ficticio para mostrar en tu portafolio.</p>
+        <a href="#" class="btn-project">Ver más</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+        <h3>Proyecto 3</h3>
+        <p>Un tercer ejemplo para practicar diseño con Flexbox.</p>
+        <a href="#" class="btn-project">Ver más</a>
+      </div>
+
+    </div>
+  </section>
+
   <footer class="site-footer">
     <p>© 2025 Juan Pablo Gutierrez Hoyos</p>
   </footer>
 </body>
 </html>
+
+
+
+
+
