@@ -8,4 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Dark mode toggle
+const darkModeButton = document.getElementById("dark-mode-toggle");
+darkModeButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
 

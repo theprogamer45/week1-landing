@@ -203,3 +203,28 @@ h2 {
   }
 }
 
+#dark-mode-toggle {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background: #000;
+}
+
+.dark-mode a {
+  color: #80deea;
+}
