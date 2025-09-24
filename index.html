@@ -6,6 +6,8 @@
   <title>Mi Primer proyecto</title> <!-- Nombre en la pestaña -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
+
 <body>
   <header class="site-header">
     <h1>Mi Portafolio</h1>
@@ -53,41 +55,112 @@
       <h2>Contacto</h2>
       <p>Puedes escribirme a: <a href="juanpgh21@gmail.com">juanpgh21@gmail.com</a></p>
     </section>
+
+    <section class="contact" id="contact">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="cta-btn">Enviar</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
   </main>
 
   <!-- Flexbox de la pagina -->
     <section id="projects" class="projects">
-    <h2>Mis Proyectos</h2>
+    <section id="projects" class="projects">
+  <h2>Mis Proyectos</h2>
+  
+  <!-- Botones de pestañas -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="web">Web</button>
+    <button class="tab-btn" data-tab="mobile">Móvil</button>
+    <button class="tab-btn" data-tab="other">Otros</button>
+  </div>
+
+  <!-- Contenido de pestañas -->
+  <div class="tab-content active" id="web">
     <div class="projects-container">
-      
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
-        <h3>Proyecto 1</h3>
-        <p>Este es un ejemplo de proyecto con descripción breve.</p>
+        <img src="img/proyecto1.jpg" alt="Proyecto Web 1">
+        <h3>Landing Page</h3>
+        <p>Un sitio moderno con HTML, CSS y JS.</p>
         <a href="#" class="btn-project">Ver más</a>
       </div>
+      <div class="project-card">
+        <img src="img/proyecto2.jpg" alt="Proyecto Web 2">
+        <h3>E-commerce</h3>
+        <p>Tienda online con carrito de compras.</p>
+        <a href="#" class="btn-project">Ver más</a>
+      </div>
+    </div>
+  </div>
 
+  <div class="tab-content" id="mobile">
+    <div class="projects-container">
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
-        <h3>Proyecto 2</h3>
-        <p>Otro proyecto ficticio para mostrar en tu portafolio.</p>
+        <img src="img/proyecto3.jpg" alt="Proyecto Móvil">
+        <h3>App de Tareas</h3>
+        <p>Aplicación móvil para organizar pendientes.</p>
         <a href="#" class="btn-project">Ver más</a>
       </div>
+    </div>
+  </div>
 
+  <div class="tab-content" id="other">
+    <div class="projects-container">
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
-        <h3>Proyecto 3</h3>
-        <p>Un tercer ejemplo para practicar diseño con Flexbox.</p>
+        <img src="img/proyecto4.jpg" alt="Otros proyectos">
+        <h3>Juego 2D</h3>
+        <p>Mini juego hecho con JavaScript Canvas.</p>
         <a href="#" class="btn-project">Ver más</a>
       </div>
+    </div>
+  </div>
+</section>
+
 
     </div>
   </section>
 
+  <!-- Back to top botton -->
+  <button id="back-to-top">⬆</button>
+  <script src="script.js"></script>
+  </body>
+  </html>
+
   <footer class="site-footer">
     <p>© 2025 Juan Pablo Gutierrez Hoyos</p>
   </footer>
-  <script src="script.js"></script>
+
+<!-- Scripts -->
+<!-- 1. ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- 2. Tu archivo JS -->
+<script src="script.js"></script>
+
+  <!-- Mensajes guardados -->
+  <section class="saved-messages">
+  <h2>📋 Mensajes Guardados (solo tú los ves)</h2>
+  <ul id="messagesList"></ul>
+</section>
+
 
 </body>
 </html>
